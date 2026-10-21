@@ -2,6 +2,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HideOnAdmin from "@/components/HideOnAdmin";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -21,9 +22,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id" className={jakarta.variable}>
       <body className="font-sans flex min-h-screen flex-col">
-        <Navbar />
+        <HideOnAdmin>
+          <Navbar />
+        </HideOnAdmin>
         <main className="flex-1">{children}</main>
-        <Footer />
+        <HideOnAdmin>
+          <Footer />
+        </HideOnAdmin>
       </body>
     </html>
   );

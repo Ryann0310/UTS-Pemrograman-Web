@@ -1,0 +1,7 @@
+Nama   : Muhammad Ryan Ramadhan
+NIM    : 2404140070
+Prodi  : Sistem Informasi
+Project: Website Profil SMA Islam Annajah
+
+Alamat website (Vercel):
+https://uts-pemrograman-web-psi.vercel.app/
